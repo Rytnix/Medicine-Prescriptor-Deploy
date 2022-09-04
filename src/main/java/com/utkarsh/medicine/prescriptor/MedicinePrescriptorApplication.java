@@ -43,7 +43,7 @@ public class MedicinePrescriptorApplication {
 
               Medicine medicine = new Medicine("Fever","Aspirin,Paracetamol","Ginger,giloy,tulsi");
 			Medicine medicine2 = new Medicine("Chest Pain","ibuprofen,Flexon","Amalaki,Lasuna");
-			Medicine medicine3 = new Medicine("Back Pain","","Ginger,giloy,tulsi");
+			Medicine medicine3 = new Medicine("Back Pain","Enzispor Capsule","Ginger,giloy,tulsi");
 			Medicine medicine4 = new Medicine("Piles","Docusate, Lidocian","Kshara Karma");
 			Medicine medicine5 = new Medicine("High Blood Pressure","Norvasc , Lotrel","Amla ,Ashwagandha");
 			Medicine medicine6 = new Medicine("Diabetes","Insuline,Metformin","Shilajit,Turmeric");
