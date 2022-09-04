@@ -1,0 +1,210 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en" dir="ltr" xmlns:th="http://www.thymeleaf.org">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Welcome</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h1>Hello SpringBoot Application</h1>-->
+
+<!--</body>-->
+<!--</html>-->
+
+
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Hexico</title>
+
+    <!-- slider stylesheet -->
+    <link rel="stylesheet" type="text/css"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
+
+    <!-- font awesome style -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href=""  th:href="@{/CSS/bootstrap.css}"/>
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700|Roboto:400,700&display=swap" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="" th:href="@{/CSS/style1.css}" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="" th:href="@{/CSS/responsive.css}" rel="stylesheet" />
+</head>
+
+<body>
+<div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
+                <a class="navbar-brand" href=""  th:href="@{/}">
+                    <img src="images/logo.png" alt="">
+                    <span>
+              Hexico
+            </span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex  flex-column flex-lg-row align-items-center w-100 justify-content-between">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="" th:href="@{/}">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class=" slider_section position-relative">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="img-box">
+                                    <img src="images/medicine.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="detail-box">
+                                    <h1>
+                                        Welcome To Hexico <br>
+                                        <span>
+                        Medicine Prescriptor
+                      </span>
+
+                                    </h1>
+                                    <p>
+                                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                        alteration in some form, by injected humour, or randomised words which don't look even slightly
+                                        believable.
+                                    </p>
+                                    <a href="" th:href="@{/cure}" class="button">find the cure</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+</div>
+<section class=" test slider_section position-relative">
+    <div id="carouselExampleIndicators" class="carousel slide medicine-group-btn" data-ride="carousel">
+        <!-- <div class="medicine_bt">
+             <a href="ayurvedic.html">Ayurvedic</a>
+         </div>
+         <div class="medicine_bt">
+             <a href="Allopathic.html">Allopathic</a>
+         </div> -->
+    </div>
+</section>
+
+<section class="info_section layout_padding2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="info_contact">
+                    <h4>
+                        Contact
+                    </h4>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/telephone-symbol-button.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                                +91 700***38***
+                            </h6>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/email.png" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <h6>
+                               contactutkarsh19@gmail.com
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- end info section -->
+
+<!-- footer section -->
+<!-- footer section -->
+
+<!--<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js">
+</script> -->
+<script type="text/javascript">
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [],
+        autoplay: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+</script>
+<script type="text/javascript">
+    $(".owl-2").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: [],
+        autoplay: true,
+
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    });
+</script>
+</body>
+
+</html>
