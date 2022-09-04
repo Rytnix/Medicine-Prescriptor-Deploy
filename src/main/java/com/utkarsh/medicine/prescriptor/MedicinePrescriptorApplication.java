@@ -40,12 +40,7 @@ public class MedicinePrescriptorApplication {
 	@Bean
 	public CommandLineRunner initialCreate(MedicineService medicineService) {
 		return (args) -> {
-			Medicine medicine =
-					new Medicine("Fever","Dolo","Basil");
-			Medicine medicine2 = new Medicine("Pain","Flexon","haldi+milk");
 
-			medicineService.createMedicine(medicine);
-			medicineService.createMedicine(medicine2);
 
 		};
 	}
