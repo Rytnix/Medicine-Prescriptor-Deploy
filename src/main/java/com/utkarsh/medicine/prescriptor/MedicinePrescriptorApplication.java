@@ -41,6 +41,32 @@ public class MedicinePrescriptorApplication {
 	public CommandLineRunner initialCreate(MedicineService medicineService) {
 		return (args) -> {
 
+              Medicine medicine = new Medicine("Fever","Aspirin,Paracetamol","Ginger,giloy,tulsi");
+			Medicine medicine2 = new Medicine("Chest Pain","ibuprofen,Flexon","Amalaki,Lasuna");
+			Medicine medicine3 = new Medicine("Back Pain","","Ginger,giloy,tulsi");
+			Medicine medicine4 = new Medicine("Piles","Docusate, Lidocian","Kshara Karma");
+			Medicine medicine5 = new Medicine("High Blood Pressure","Norvasc , Lotrel","Amla ,Ashwagandha");
+			Medicine medicine6 = new Medicine("Diabetes","Insuline,Metformin","Shilajit,Turmeric");
+			Medicine medicine7 = new Medicine("Hair Fall","Minoxidil,Finasteride","Amla,Shikakai");
+			Medicine medicine8 = new Medicine("Pimples","Tetracylinc,Macrolide","Haridra Khanda");
+			Medicine medicine9 = new Medicine("Vomiting","Arepitant","Honey Roasted gram");
+			Medicine medicine10 = new Medicine("Headache","Aspirin,Paracetamol","Brahmi ghitam");
+			Medicine medicine11 = new Medicine("Cough","Mucinex DM","Tulsi,Pippali");
+
+
+
+			medicineService.createMedicine(medicine);
+			medicineService.createMedicine(medicine2);
+			medicineService.createMedicine(medicine3);
+			medicineService.createMedicine(medicine4);
+			medicineService.createMedicine(medicine5);
+			medicineService.createMedicine(medicine11);
+			medicineService.createMedicine(medicine10);
+			medicineService.createMedicine(medicine9);
+			medicineService.createMedicine(medicine8);
+			medicineService.createMedicine(medicine7);
+			medicineService.createMedicine(medicine6);
+
 
 
 
