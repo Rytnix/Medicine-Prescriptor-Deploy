@@ -54,5 +54,13 @@ public class MedicineController {
 
     }
 
+    @GetMapping(value = "/admin/medicinedelete/{id}")
+    public String medicinedelete(@PathVariable Long id,Model model){
+         medicineService.deletemedicinebyid(id);
+
+         return "success";
+    }
+
+
 
 }

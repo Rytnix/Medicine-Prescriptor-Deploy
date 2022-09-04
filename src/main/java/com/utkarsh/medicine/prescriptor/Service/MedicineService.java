@@ -36,6 +36,12 @@ public class MedicineService{
         medicine = (List<Medicine>) medicineRepo.findAll();
         return  medicine;
     }
+    public void  deletemedicinebyid(Long id){
+         Medicine medicine;
+         medicine = medicineRepo.findById(id)
+                 .orElseThrow(()->new RuntimeException("medicine not found "));
+         medicineRepo.deleteById(medicine.getId());  ;
+    }
 
 
 
