@@ -21,12 +21,7 @@ public class MedicinePrescriptorApplication {
 			Medicine medicine =
 					new Medicine("Fever","Dolo","Basil");
 			Medicine medicine2 = new Medicine("Pain","Flexon","haldi+milk");
-//
-//			book1.addAuthor(author1);
-//			book1.addCategory(category1);
-//			book1.addPublisher(publisher1);
-//			bookService.createBook(book1);
-//
+
 			medicineService.createMedicine(medicine);
 			medicineService.createMedicine(medicine2);
 
