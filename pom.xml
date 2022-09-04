@@ -14,7 +14,7 @@
 	<name>Medicine-Prescriptor</name>
 	<description>A Medicine prescriptor.</description>
 	<properties>
-		<java.version>18</java.version>
+		<java.version>11</java.version>
 	</properties>
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-thymeleaf -->
@@ -68,7 +68,7 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.8.0</version>
 				<configuration>
-					<release>18</release>
+
 				</configuration>
 			</plugin>
 		</plugins>
