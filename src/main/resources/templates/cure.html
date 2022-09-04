@@ -117,6 +117,9 @@
             </div>
           </div>
         </div>
+        <div class="image">
+          <img th:src="@{/images/ste-doc.jpg}" />
+        </div>
       </div>
     </section>
 
@@ -165,7 +168,7 @@
 
 
     const popullateDiseaseList = () =>{
-      fetch("http://localhost:8080/medicine/findall").then((rawData) => rawData.json()).then((data)=>{
+      fetch("https://medicineprescriptor.osc-fr1.scalingo.io/medicine/findall").then((rawData) => rawData.json()).then((data)=>{
         data.forEach((diseaseItem)=>{
           // console.log(cloneListItem)
           // const textNode = document.createTextNode(diseaseItem)
@@ -187,7 +190,7 @@
 
     function  handleclick(diseaseid){
       let result;
-      fetch(`http://localhost:8080/medicine/${diseaseid}`)
+      fetch(`https://medicineprescriptor.osc-fr1.scalingo.io/medicine/${diseaseid}`)
               .then((i)=> i.json())
               .then((j)=> {
                 document.querySelector("#fev").innerText = j.disease

@@ -353,3 +353,8 @@ ul,li{
     color:inherit;
     text-decoration: none;
 }
+
+.image > img{
+    height: 100px;
+    width: 100px;
+}
