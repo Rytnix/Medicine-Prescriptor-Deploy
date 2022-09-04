@@ -108,11 +108,11 @@
           <div class="disease-desp">
             <h2 class="disease-name" id="fev"></h2>
             <div class="medicine-section">
-              <h3 class="medicine-section-heading"></h3>
+              <h3 class="medicine-section-heading" id="fev3"></h3>
               <p class="allopath-name medicine-name" id="fev1"></p>
             </div>
             <div class="medicine-section">
-              <h3 class="medicine-section-heading"></h3>
+              <h3 class="medicine-section-heading" id="fev4"></h3>
               <p class="ayurveda-name medicine-name" id="fev2"></p>
             </div>
           </div>
@@ -197,6 +197,8 @@
                 document.querySelector("#fev").innerText = j.disease
                 document.querySelector("#fev1").innerText = j.allopathicName
                 document.querySelector("#fev2").innerText = j.ayurvedicName
+                document.querySelector("#fev3").innerText = "Allopathic"
+                document.querySelector("#fev4").innerText = "Ayurvedic"
 
               })
 
