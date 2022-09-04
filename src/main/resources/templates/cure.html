@@ -190,7 +190,7 @@
 
     function  handleclick(diseaseid){
       let result;
-      fetch(`https://medicine-prescriptor.herokuapp.com//medicine/${diseaseid}`)
+      fetch(`https://medicine-prescriptor.herokuapp.com/medicine/${diseaseid}`)
               .then((i)=> i.json())
               .then((j)=> {
                 document.querySelector("#fev").innerText = j.disease
