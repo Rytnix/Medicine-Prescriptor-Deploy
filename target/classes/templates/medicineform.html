@@ -1,0 +1,55 @@
+<!--<!DOCTYPE HTML>-->
+<!--<html xmlns:th="https://www.thymeleaf.org">-->
+<!--<head>-->
+<!--  <title>Getting Started: Handling Form Submission</title>-->
+<!--  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />-->
+<!--</head>-->
+<!--<body>-->
+<!--<div  style="align-content: center">-->
+<!--<h1>Form</h1>-->
+<!--<form action="#" th:action="@{medicineinput}" th:object="${medicine}" method="post">-->
+<!--  <p>Name: <input type="text" th:field="*{name}" /></p>-->
+<!--  <p>Description: <input type="text" th:field="*{description}" /></p>-->
+<!--  <p>Category: <input type="text" th:field="*{category}" /></p>-->
+<!--  <p>AyurvedicAlternative: <input type="text" th:field="*{ayurvedicAlternative}" /></p>-->
+<!--  <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>-->
+<!--</form>-->
+<!--</div>-->
+<!--</body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+  <title>Admin</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link  rel="stylesheet"  type="text/css" th:href="@{/CSS/style.css}">
+</head>
+<body   th:style="'background-image:url(' + @{/images/back.jpg} + '); background-repeat: no-repeat, repeat; background-size: cover;'" >
+<div class="main-block">
+  <div class="left-part">
+    <i class="fas fa-file-prescription  fa-4x " ></i>
+    <h1>ADMIN PANEL</h1>
+    <h1>Register New Medicine</h1>
+    <p>This is the admin pannel to register new medicine. This pannel can only be accessed by the Admins</p>
+    <div class="btn-group">
+    </div>
+  </div>
+  <form action="#" th:action="@{medicineinput}" th:object="${medicine}" method="post">
+    <div class="title">
+      <i class="fas fa-pencil-alt"></i>
+      <h2>Register here</h2>
+    </div>
+    <div class="info">
+      <input class="fname" type="text" name="name" placeholder="Disease Name" th:field="*{disease}">
+      <input type="text" name="name" placeholder="Allopahtic Name" th:field="*{allopathicName}">
+      <input type="text" name="name" placeholder="Ayurvedic Name" th:field="*{ayurvedicName}">
+
+    </div>
+
+    <button type="submit" href="/">Submit</button>
+  </form>
+</div>
+</body>
+</html>

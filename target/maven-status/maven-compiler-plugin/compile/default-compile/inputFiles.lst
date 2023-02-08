@@ -1,0 +1,9 @@
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Service/CategoryService.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Objects/Category.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Objects/Medicine.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Service/MedicineService.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/MedicinePrescriptorApplication.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Repositories/CategoryRepo.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Controller/MedicineController.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Repositories/MedicineRepo.java
+/home/utkarshy/Medicine-Prescriptor-Deploy/src/main/java/com/utkarsh/medicine/prescriptor/Controller/HomeController.java
