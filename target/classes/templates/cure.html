@@ -143,7 +143,6 @@
 
                 <div class="detail-box">
                   <h6>contactutkarsh19@gmail.com</h6>
-                  <h6>9648gauravmishra@gmail.com</h6>
                 </div>
 
               </div>
@@ -169,7 +168,7 @@
 
 
     const popullateDiseaseList = () =>{
-      fetch("https://medicine-prescriptor.herokuapp.com/medicine/findall").then((rawData) => rawData.json()).then((data)=>{
+      fetch("http://ec2-54-144-146-35.compute-1.amazonaws.com:8081/medicine/findall").then((rawData) => rawData.json()).then((data)=>{
         data.forEach((diseaseItem)=>{
           // console.log(cloneListItem)
           // const textNode = document.createTextNode(diseaseItem)
@@ -191,7 +190,7 @@
 
     function  handleclick(diseaseid){
       let result;
-      fetch(`https://medicine-prescriptor.herokuapp.com/medicine/${diseaseid}`)
+      fetch(`http://ec2-54-144-146-35.compute-1.amazonaws.com:8081/medicine/${diseaseid}`)
               .then((i)=> i.json())
               .then((j)=> {
                 document.querySelector("#fev").innerText = j.disease
