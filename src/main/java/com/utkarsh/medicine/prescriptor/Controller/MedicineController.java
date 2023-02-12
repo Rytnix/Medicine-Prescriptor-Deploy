@@ -4,7 +4,6 @@ import com.utkarsh.medicine.prescriptor.Objects.Medicine;
 import com.utkarsh.medicine.prescriptor.Repositories.MedicineRepo;
 import com.utkarsh.medicine.prescriptor.Service.MedicineService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -12,6 +11,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @Controller
+@CrossOrigin(origins = "*")
+@RequestMapping("/mp")
 public class MedicineController {
 
 
