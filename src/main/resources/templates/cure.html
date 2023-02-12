@@ -168,7 +168,7 @@
 
 
     const popullateDiseaseList = () =>{
-      fetch("http://ec2-54-144-146-35.compute-1.amazonaws.com:8081/medicine/findall").then((rawData) => rawData.json()).then((data)=>{
+      fetch("http://ec2-54-144-146-35.compute-1.amazonaws.com:8081/mp/medicine/findall").then((rawData) => rawData.json()).then((data)=>{
         data.forEach((diseaseItem)=>{
           // console.log(cloneListItem)
           // const textNode = document.createTextNode(diseaseItem)
@@ -190,7 +190,7 @@
 
     function  handleclick(diseaseid){
       let result;
-      fetch(`http://ec2-54-144-146-35.compute-1.amazonaws.com:8081/medicine/${diseaseid}`)
+      fetch(`http://ec2-54-144-146-35.compute-1.amazonaws.com:8081/mp/medicine/${diseaseid}`)
               .then((i)=> i.json())
               .then((j)=> {
                 document.querySelector("#fev").innerText = j.disease
